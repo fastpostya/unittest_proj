@@ -1,7 +1,8 @@
 import unittest
 from utils.arrs import get, my_slice
 
-class Test_my_func(unittest.TestCase):
+
+class TestMyFunc(unittest.TestCase):
     def test_get(self):
         self.assertEqual(get([1, 2, 3], 1, "test"), 2)
         self.assertEqual(get([], 0, "test"), "test")
@@ -17,3 +18,4 @@ class Test_my_func(unittest.TestCase):
         self.assertEqual(my_slice([1, 2, 3, 4], 3, 1), [])
         self.assertEqual(my_slice([], 1, 1), [])
         self.assertEqual(my_slice([1, 2, 3, 2, 8], -6, -1), [1, 2, 3, 2])
+
